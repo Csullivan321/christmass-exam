@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Q1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        
+        <ListBox x:Name="lstbx1" HorizontalAlignment="Left" Height="192" Margin="96,130,0,0" VerticalAlignment="Top" Width="129" Loaded="Lstbx1_Loaded" SelectionChanged="Lstbx1_SelectionChanged"/>
+        <ListBox x:Name="lstbx2" HorizontalAlignment="Left" Height="192" Margin="564,130,0,0" VerticalAlignment="Top" Width="128"/>
+        <Button x:Name="btn1" Content="Add &gt;&gt;" HorizontalAlignment="Left" Margin="346,175,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="btn2" Content="&lt;&lt; Remove" HorizontalAlignment="Left" Margin="346,259,0,0" VerticalAlignment="Top" Width="75" Click="Btn2_Click"/>
+        <Label Content="All Players" HorizontalAlignment="Left" Margin="96,87,0,0" VerticalAlignment="Top" Width="71"/>
+        <Label Content="Selected Players" HorizontalAlignment="Left" Margin="564,95,0,0" VerticalAlignment="Top" Width="103"/>
+
     </Grid>
 </Window>

@@ -38,5 +38,14 @@ namespace Q1
             preferredposition = Preferred_Position;
             dateofbirth = Date_Of_Birth;
         }
+
+        public Players()
+        {
+        }
+
+        public override string ToString()
+        {
+            return string.Format("{0} {1} {2} {3} {4}", First_Name, Surname, Age, Preferred_Position);
+        }
     }
 }
